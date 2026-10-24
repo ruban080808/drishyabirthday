@@ -1,0 +1,384 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Drishyapriya's Magical Birthday 🎀</title>
+
+    <meta name="description"
+          content="A magical birthday celebration for our little princess Drishyapriya!">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="floating-decorations" aria-hidden="true"></div>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+
+        <div class="hero-content">
+
+            <span class="badge">🧸 A LITTLE ANGEL'S SPECIAL DAY 🧸</span>
+
+            <h1>
+                Happy Birthday
+                <span>Drishyapriya!</span>
+            </h1>
+
+            <p class="hero-description">
+                Two years of smiles, giggles, hugs and endless love. 💖
+            </p>
+
+            <div class="hero-photo">
+                <img
+                    src="images/drishyapriya1.jpg"
+                    alt="Our little princess Drishyapriya"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                >
+
+                <div class="photo-placeholder">
+                    👶🏻
+                    <span>Add Drishyapriya's photo</span>
+                </div>
+            </div>
+
+            <a href="#countdown" class="button">
+                Let's Celebrate! 🎉
+            </a>
+
+        </div>
+
+        <div class="cloud cloud-one">☁️</div>
+        <div class="cloud cloud-two">☁️</div>
+        <div class="cloud cloud-three">☁️</div>
+
+    </header>
+
+
+    <!-- COUNTDOWN -->
+    <section id="countdown" class="section countdown-section">
+
+        <div class="section-heading">
+            <span>🎂 🎈 🎂</span>
+            <h2>Counting Down to Your Special Day</h2>
+
+            <p>
+                Our little princess is turning TWO!
+            </p>
+        </div>
+
+        <div id="countdown-timer" class="countdown-grid">
+
+            <div class="time-card">
+                <strong id="days">00</strong>
+                <span>Days</span>
+            </div>
+
+            <div class="time-card">
+                <strong id="hours">00</strong>
+                <span>Hours</span>
+            </div>
+
+            <div class="time-card">
+                <strong id="minutes">00</strong>
+                <span>Minutes</span>
+            </div>
+
+            <div class="time-card">
+                <strong id="seconds">00</strong>
+                <span>Seconds</span>
+            </div>
+
+        </div>
+
+        <h3 id="birthday-message" hidden>
+            🎉 TODAY IS YOUR SPECIAL DAY! 🎉
+        </h3>
+
+        <p class="cute-note">
+            🌸 26 October 2026 · Two years of happiness 🌸
+        </p>
+
+    </section>
+
+
+    <!-- MESSAGE -->
+    <section class="section message-section">
+
+        <div class="section-heading">
+            <span>💗</span>
+            <h2>Our Little Shining Star</h2>
+        </div>
+
+        <div class="message-card">
+
+            <div class="big-emoji">🌟</div>
+
+            <p>
+                Two years ago, a beautiful little angel entered our family
+                and filled our hearts with happiness.
+            </p>
+
+            <p>
+                Dear Drishyapriya, I love you so much!
+                Your adorable smile brightens every day,
+                and your innocent laughter makes every moment special.
+            </p>
+
+            <p>
+                I wish you could always stay happy, smiling like a shining
+                star in the beautiful sky. May your little world always
+                be filled with rainbows, warm hugs, sweet laughter,
+                magical dreams and endless love.
+            </p>
+
+            <p>
+                Keep smiling, keep shining, and always be our little
+                bundle of happiness! 🧸💖
+            </p>
+
+            <div class="signature">
+                With lots of love, Your Uncle ❤️
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PHOTO GALLERY -->
+    <section class="section gallery-section">
+
+        <div class="section-heading">
+            <span>📸</span>
+            <h2>Little Moments, Big Memories</h2>
+            <p>Every picture tells a beautiful little story. 💕</p>
+        </div>
+
+        <div class="gallery">
+
+            <figure class="gallery-card">
+                <img
+                    src="images/drishyapriya1.jpg"
+                    alt="Drishyapriya smiling"
+                    loading="lazy"
+                    onerror="this.parentElement.style.display='none'"
+                >
+                <figcaption>Our Little Princess 👑</figcaption>
+            </figure>
+
+            <figure class="gallery-card">
+                <img
+                    src="images/drishyapriya2.jpg"
+                    alt="A sweet memory of Drishyapriya"
+                    loading="lazy"
+                    onerror="this.parentElement.style.display='none'"
+                >
+                <figcaption>That Beautiful Smile 🌸</figcaption>
+            </figure>
+
+            <figure class="gallery-card">
+                <img
+                    src="images/drishyapriya3.jpg"
+                    alt="A happy moment with Drishyapriya"
+                    loading="lazy"
+                    onerror="this.parentElement.style.display='none'"
+                >
+                <figcaption>Our Shining Star ✨</figcaption>
+            </figure>
+
+        </div>
+
+        <p class="cute-note">
+            Replace the sample filenames with your favourite photos!
+        </p>
+
+    </section>
+
+
+    <!-- SURPRISE LETTER -->
+    <section class="section letter-section" id="letter">
+
+        <div class="section-heading">
+            <span>💌</span>
+            <h2>A Little Letter Full of Love</h2>
+            <p>Someone has a very special message for you!</p>
+        </div>
+
+        <div class="letter-container">
+
+            <div id="envelope" class="envelope">
+                <div class="envelope-heart">💌</div>
+                <div class="envelope-label">
+                    For Drishyapriya
+                </div>
+            </div>
+
+            <button id="open-letter" class="button">
+                Open Your Surprise Letter 💖
+            </button>
+
+            <article id="letter-content" class="letter-content" hidden>
+
+                <div class="letter-top">🌸 💖 🌸</div>
+
+                <h2>To My Little Princess</h2>
+
+                <h3>Dear Drishyapriya,</h3>
+
+                <p>
+                    Happy 2nd Birthday, my little shining star! 🎂👑
+                </p>
+
+                <p>
+                    Two years ago, a little angel came into our family
+                    and filled our lives with happiness, love,
+                    and countless beautiful smiles.
+                </p>
+
+                <p>
+                    My dear Drishyapriya, I love you so much!
+                    Your little smile can brighten even the darkest day.
+                    Your innocent face, adorable expressions, and cheerful
+                    little world make you so special to me.
+                </p>
+
+                <p>
+                    I wish you could always stay as happy as you are today,
+                    smiling like a shining star in the beautiful sky. ✨
+                </p>
+
+                <p>
+                    May your little world always be filled with colourful
+                    rainbows, magical dreams, warm hugs, sweet laughter,
+                    and endless love.
+                </p>
+
+                <p>
+                    As you grow up, I hope you become a kind, brave,
+                    happy, and wonderful person. Never stop smiling,
+                    my little princess, because your smile is one of the
+                    sweetest gifts our family has.
+                </p>
+
+                <p>
+                    You may be only two years old today, but you already
+                    hold such a special place in my heart.
+                </p>
+
+                <p>
+                    Keep smiling, keep shining, and keep spreading
+                    happiness wherever you go, my little angel. 🧸💕
+                </p>
+
+                <p class="letter-closing">
+                    Happy 2nd Birthday, Drishyapriya! 🎂
+                    <br><br>
+                    With lots of love,<br>
+                    Your loving Uncle ❤️
+                </p>
+
+                <div class="letter-top">🌷 🧸 🌷</div>
+
+                <button id="close-letter" class="button">
+                    Close Letter 💌
+                </button>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- MUSIC PLAYER -->
+    <section class="section music-section">
+
+        <div class="section-heading">
+            <span>🎵</span>
+            <h2>A Little Birthday Melody</h2>
+            <p>A sweet song for our little princess. 🎶</p>
+        </div>
+
+        <div class="music-card">
+
+            <div class="music-icon" id="music-icon">🎵</div>
+
+            <h3>Drishyapriya's Birthday Song</h3>
+
+            <p>Made with love, just for you. 💖</p>
+
+            <audio id="birthday-audio" preload="none">
+                <source src="music/birthday.mp3" type="audio/mpeg">
+            </audio>
+
+            <button id="music-toggle" class="button">
+                ▶ Play Music
+            </button>
+
+            <label class="volume-label" for="volume">
+                Volume
+            </label>
+
+            <input
+                id="volume"
+                type="range"
+                min="0"
+                max="1"
+                step="0.05"
+                value="0.7"
+            >
+
+            <p id="music-status" aria-live="polite">
+                Tap play to start the music 🎶
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- FINAL CELEBRATION -->
+    <section class="final-section">
+
+        <div class="final-content">
+
+            <div class="final-emoji">🎂 🧸 🎈</div>
+
+            <h2>
+                Happy 2nd Birthday,
+                <span>Drishyapriya!</span>
+            </h2>
+
+            <p>
+                Keep smiling like a star and shining like a little princess.
+                You will always be our bundle of happiness! 💖
+            </p>
+
+            <button id="celebrate-again" class="button">
+                Celebrate Again 🎉
+            </button>
+
+            <div class="final-emoji">🌈 🌸 💖</div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+        Made with endless love for Drishyapriya 💗
+        <br>
+        <span>26 October 2026 · Our Little Princess Turns Two</span>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
